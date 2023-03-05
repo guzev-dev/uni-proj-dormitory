@@ -1,0 +1,20 @@
+.alg-item:hover {
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.alg-item-title {
+  border-bottom: 2px #01BAFD solid;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.alg-item-subtext {
+  text-align: justify;
+  opacity: 70%;
+
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}

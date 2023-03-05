@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-6 px-3 py-1" *ngFor="let dormitory of dormitories;">
+      <div class="row border bg-gray">
+        <div class="col-3">
+          <img class="img-fluid p-2" [src]="dormitory.photo" alt="">
+        </div>
+        <div class="col-9 p-2">
+          <p class="text-info border-bottom fs-4 fw-bolder pb-1">Гуртожиток №{{dormitory.dormitoryNumber}}</p>
+          <ul>
+            <li>Address</li>
+            <li>Dormitory Type</li>
+            <li>Faculty</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

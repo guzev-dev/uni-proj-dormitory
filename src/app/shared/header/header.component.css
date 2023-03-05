@@ -1,0 +1,67 @@
+.navbar {
+  opacity: 90%;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+span {
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #01BAFD !important;
+}
+
+.nav-item {
+  position: relative;
+  height: 50px;
+}
+
+.nav-item:after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #01BAFD;
+  transition: height .2s;
+}
+
+.nav-item:hover:after {
+  height: 100%;
+}
+
+.nav-item > .nav-link {
+  transform: scaleY(1.1);
+  position: relative;
+  z-index: 2;
+}
+
+.nau-logo {
+  height: 60px;
+  width: 75px;
+  border-radius: 20px;
+}
+
+.navbar-brand {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    width: auto;
+  }
+
+  .nau-logo {
+    height: 40px;
+    width: 50px;
+    border-radius: 20px;
+  }
+}
