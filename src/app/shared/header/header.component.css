@@ -5,13 +5,12 @@
   top: 0;
 }
 
-span {
-  color: white;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 14px;
+.container-fluid > .navbar-collapse > .navbar-nav {
+  display: none;
+}
+
+.container-fluid:hover > .navbar-collapse > .navbar-nav {
+  display: block;
 }
 
 .active {
@@ -20,7 +19,16 @@ span {
 
 .nav-item {
   position: relative;
-  height: 50px;
+  height: 35px;
+}
+
+.nav-item > a {
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .nav-item:after {
@@ -45,8 +53,9 @@ span {
 }
 
 .nau-logo {
-  height: 60px;
-  width: 75px;
+  margin-left: 10px;
+  height: 50px;
+  width: 60px;
   border-radius: 20px;
 }
 
@@ -55,11 +64,25 @@ span {
 }
 
 @media (min-width: 992px) {
+
+  .container-fluid > .navbar-collapse > .navbar-nav {
+    display: flex;
+  }
+
+  .container-fluid:hover > .navbar-collapse > .navbar-nav {
+    display: flex;
+  }
+
   .navbar-brand {
     width: auto;
   }
 
+  .nav-item {
+    height: 50px;
+  }
+
   .nau-logo {
+    margin-left: 0;
     height: 40px;
     width: 50px;
     border-radius: 20px;

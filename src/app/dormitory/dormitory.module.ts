@@ -13,7 +13,6 @@ import { DormitoryListComponent } from './dormitory-list/dormitory-list.componen
   ],
   exports: [
     DormitoryListComponent
-
   ]
 })
 export class DormitoryModule { }

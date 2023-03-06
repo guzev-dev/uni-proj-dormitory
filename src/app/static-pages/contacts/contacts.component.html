@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div class="row p-5">
+    <div class="offset-lg-1 col-lg-11 col-12 mb-5">
+      <h1 class="display-2">Дирекція студмістечка</h1>
+    </div>
+
+    <div class="offset-lg-1 col-12 col-lg-7">
+      <p class="fs-5 text-justify">
+        <span class="fw-bolder">Адреса:</span>
+        03058 м. Київ, вул. Гарматна 51, каб. №009 (Гуртожиток №3)</p>
+
+      <p class="fs-5 text-justify">
+        <span class="fw-bolder">Телефон:</span>
+        (044) 406-70-41</p>
+
+      <p class="fs-5 text-justify">
+        <span class="fw-bolder">Електронна пошта:</span>
+        studmisto@nau.edu.ua</p>
+
+      <p class="fs-5 text-justify">
+        <span class="fw-bolder">Режим роботи:</span>
+        Понеділок — Четвер: 08:00 — 17:00; П'ятниця: 08:00 — 16:00</p>
+
+      <p class="fs-5 text-justify">
+        <span class="fw-bolder">Обідня перерва:</span>
+        12:00 — 12:50</p>
+
+      <p class="fs-5 text-justify">
+        <span class="fw-bolder">Вихідні:</span>
+        Субота, Неділя.</p>
+    </div>
+
+    <div class="offset-lg-1 col-lg-1 mt-2 opacity-50 d-lg-block d-none">
+      <img style="mix-blend-mode: screen"
+           src="assets/img/sm-nau.jfif">
+    </div>
+  </div>
+
+  <div class="row px-5">
+    <div class="offset-xl-1 col-xl-3 col-12 mb-4">
+      <h2 class="display-6">Директор студмістечка</h2>
+      <p class="fw-bolder mb-1 fs-5">Станко Петро Олександрович</p>
+      <p class="fs-5">Тел.: (044) 406-40-04</p>
+    </div>
+    <div class="col-xl-3 col-12 mb-4 border-left">
+      <h2 class="display-6">Заступник директора</h2>
+      <p class="fw-bolder mb-1 fs-5">Лісовик Галина Дмитрівна</p>
+      <p class="fs-5">Тел.: (044) 406-79-51</p>
+    </div>
+    <div class="col-xl-4 col-12 mb-4 border-left">
+      <h2 class="display-6">Начальник експлуатаційного відділу</h2>
+      <p class="fw-bolder mb-1 fs-5">Кулик Андрій Максимович</p>
+      <p class="fs-5">Тел.: (044) 406-68-52</p>
+    </div>
+    <div class="offset-xl-1 col-xl-3 col-12 mb-4">
+      <h2 class="display-6">Начальник відділу організаційної роботи в гуртожитках</h2>
+      <p class="fw-bolder mb-1 fs-5">Дудко Олександр Станіславович</p>
+      <p class="fs-5 mb-1">Тел.: (044) 406-68-59</p>
+      <p class="fs-5">Електронна пошта: vorgstud@npp.nau.edu.ua</p>
+    </div>
+    <div class="col-xl-3 col-12 mb-4 border-left">
+      <h2 class="display-6">Начальник відділу санітарно-епідем. контролю</h2>
+      <p class="fw-bolder mb-1 fs-5">Скорбогач Галина Григорівна</p>
+      <p class="fs-5">Тел.: (044) 406-76-97</p>
+    </div>
+    <div class="col-xl-4 col-12 mb-4 border-left">
+      <h2 class="display-6">Начальник відділу розрахунків за проживання</h2>
+      <p class="fw-bolder mb-1 fs-5">Муляр Галина Миколаївна</p>
+      <p class="fs-5 mb-1">Тел.: (044) 406-79-65</p>
+      <p class="fs-5">Електронна пошта: buhost@nau.edu.ua</p>
+    </div>
+  </div>
+
+  <div class="p-5 d-flex justify-content-center">
+    <table>
+      <tr *ngFor="let dormitory of dormitories;">
+        <td class="px-4 py-2 fs-4">Гуртожиток №{{dormitory.dormitoryNumber}}</td>
+        <td class="px-4 py-2 fs-4">{{dormitory.contacts}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

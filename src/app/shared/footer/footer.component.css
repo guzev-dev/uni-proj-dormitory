@@ -1,0 +1,8 @@
+.bi-footer {
+  color: darkgray;
+  cursor: pointer;
+}
+
+.bi-footer:hover {
+  opacity: 70%;
+}

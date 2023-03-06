@@ -1,0 +1,22 @@
+.text-justify {
+  text-align: justify;
+}
+
+.border-left {
+  border: 0;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+td + td {
+  border-left: 1px solid black;
+}
+
+@media (min-width: 1200px) {
+  .border-left {
+    border-left: 1px solid lightgray;
+    padding-left: 20px;
+  }
+}

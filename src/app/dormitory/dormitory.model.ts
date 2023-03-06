@@ -5,7 +5,8 @@ export interface DormitoryModel {
   dormitoryNumber?: number,
   address?: string,
   dormitoryType?: string,
+  faculties?: string,
   photo?: string,
-  contacts?: string[]
+  contacts?: string
 
 }

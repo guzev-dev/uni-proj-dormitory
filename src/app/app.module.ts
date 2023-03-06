@@ -3,18 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { MainComponent } from './main-page/main/main.component';
 import {DormitoryModule} from "./dormitory/dormitory.module";
+import { FooterComponent } from './shared/footer/footer.component';
+import {StaticPagesModule} from "./static-pages/static-pages.module";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    DormitoryModule
+    RouterModule.forRoot([]),
+    DormitoryModule,
+    StaticPagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

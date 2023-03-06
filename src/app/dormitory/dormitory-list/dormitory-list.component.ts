@@ -13,37 +13,43 @@ export class DormitoryListComponent implements OnInit {
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
-      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg'
+      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg',
+      faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
-      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg'
+      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg',
+      faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
-      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg'
+      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg',
+      faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
-      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg'
+      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg',
+      faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
-      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg'
+      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg',
+      faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
-      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg'
+      photo: 'https://nau.edu.ua/site/variables/menuimages/hostel7_2.jpg',
+      faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     }
   ]
 
