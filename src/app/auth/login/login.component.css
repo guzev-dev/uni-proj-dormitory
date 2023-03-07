@@ -1,0 +1,34 @@
+.border-blue {
+  border: 0;
+}
+
+.form-control {
+  border: 1px #039ACE solid;
+  border-radius: 0;
+}
+
+.btn-blue {
+  border: 2px #039ACE solid;
+  background-color: transparent;
+  padding: 15px;
+}
+
+.btn-blue:hover {
+  background-color: #039ACE;
+  color: white !important;
+  font-weight: bold;
+}
+
+.link-custom {
+  cursor: pointer;
+}
+
+.link-custom:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  .border-blue {
+    border: 3px #039ACE solid;
+  }
+}

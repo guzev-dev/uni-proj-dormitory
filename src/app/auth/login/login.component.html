@@ -1,0 +1,124 @@
+<div class="container-fluid">
+  <div class="d-flex align-items-center" style="min-height: 85vh;">
+    <div class="offset-xl-4 col-xl-4 col-12 p-xl-5 p-2 my-4 border-blue">
+
+      <div *ngIf="loginMode">
+        <h1 class="display-6 mb-4">Вхід в акаунт</h1>
+        <form [formGroup]="loginForm">
+          <div class="form-floating mb-4">
+            <input type="email" class="form-control" id="loginEmail" placeholder=" " formControlName="email">
+            <label for="loginEmail" class="text-muted">Електронна пошта</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="password" class="form-control" id="loginPassword" placeholder=" " formControlName="password">
+            <label for="loginPassword" class="text-muted">Пароль</label>
+          </div>
+
+          <div class="text-center mb-5">
+            <button type="submit" class="btn-blue text-muted px-5" (click)="onLogin()">Вхід</button>
+          </div>
+
+          <div class="text-center">
+            <p>Немає акаунта?
+              <span class="text-blue link-custom" (click)="loginMode = false;">Створити обліковий запис</span>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div *ngIf="!loginMode">
+        <h1 class="display-6 mb-4">Реєстрація акаунта</h1>
+
+        <form [formGroup]="signUpForm">
+
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control" id="signUpLastName" placeholder=" " formControlName="lastName">
+            <label for="signUpLastName" class="text-muted">Прізвище</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control" id="signUpFirstName" placeholder=" " formControlName="firstName">
+            <label for="signUpFirstName" class="text-muted">Ім'я</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="signUpPatronymic" placeholder=" " formControlName="patronymic">
+            <label for="signUpPatronymic" class="text-muted">По батькові</label>
+          </div>
+
+          <div class="mb-3 d-flex">
+            <div>
+              <input class="form-check-input" type="radio" name="gender" id="male" value="Чоловік" formControlName="gender">
+              <label class="form-check-label ms-1" for="male">
+                Чоловік
+              </label>
+            </div>
+
+            <div class="ms-4">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="Жінка" formControlName="gender">
+              <label class="form-check-label ms-1" for="female">
+                Жінка
+              </label>
+            </div>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control" id="signUpPhone" placeholder=" " formControlName="phoneNumber">
+            <label for="signUpPhone" class="text-muted">Номер телефону</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="email" class="form-control" id="signUpEmail" placeholder=" " formControlName="email">
+            <label for="signUpEmail" class="text-muted">Електронна пошта</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="password" class="form-control" id="signUpPassword" placeholder=" " formControlName="password">
+            <label for="signUpPassword" class="text-muted">Пароль</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="signUpPasswordCheck" placeholder=" " formControlName="passwordCheck">
+            <label for="signUpPasswordCheck" class="text-muted">Повторити пароль</label>
+          </div>
+
+          <div *ngIf="!loginMode && this.checkPassword()">
+            <p class="alert alert-danger">Паролі відрізняються</p>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="signUpStudentCheck" (change)="studentCheck($event)">
+            <label class="form-check-label" for="signUpStudentCheck">
+              Студент/-ка НАУ
+            </label>
+          </div>
+
+          <div *ngIf="isStudent">
+            <div class="form-floating mb-4">
+              <input type="text" class="form-control" id="signUpFaculty" placeholder=" " formControlName="faculty">
+              <label for="signUpFaculty" class="text-muted">Факультет</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="signUpGroup" placeholder=" " formControlName="group">
+              <label for="signUpGroup" class="text-muted">Група</label>
+            </div>
+          </div>
+
+          <div class="text-center mb-5">
+            <button type="submit" class="btn-blue text-muted px-5" (click)="onSignUp()">Створити акаунт</button>
+          </div>
+
+          <div class="text-center">
+            <p>Вже є обліковий запис?
+              <span class="text-blue link-custom" (click)="loginMode = true;">Вхід в акаунт</span>
+            </p>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

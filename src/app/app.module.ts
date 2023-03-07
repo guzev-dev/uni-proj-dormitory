@@ -7,6 +7,7 @@ import {DormitoryModule} from "./dormitory/dormitory.module";
 import { FooterComponent } from './shared/footer/footer.component';
 import {StaticPagesModule} from "./static-pages/static-pages.module";
 import {RouterModule} from "@angular/router";
+import {AuthModule} from "./auth/auth.module";
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import {RouterModule} from "@angular/router";
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([]),
+    RouterModule.forRoot([], {scrollPositionRestoration: 'enabled'}),
     DormitoryModule,
-    StaticPagesModule
+    StaticPagesModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
