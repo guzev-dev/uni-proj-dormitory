@@ -1,0 +1,22 @@
+<div class="row">
+  <table class="fs-5">
+    <tr class="text-center">
+      <td class="d-xl-table-cell d-block py-2">Гуртожиток</td>
+      <td class="d-xl-table-cell d-block py-2">Номер кімнати</td>
+      <td class="d-xl-table-cell d-block py-2">Кількість місць</td>
+      <td class="d-xl-table-cell d-block py-2">Меблі</td>
+    </tr>
+    <tr *ngFor="let room of rooms;" class="data">
+      <td class="d-xl-table-cell d-block py-2">{{room.dormitoryId}}</td>
+      <td class="d-xl-table-cell d-block py-2">{{room.roomNumber}}</td>
+      <td class="d-xl-table-cell d-block py-2">{{room.capacity}}</td>
+      <td class="d-xl-table-cell d-block py-2">
+          <ul>
+            <li class="text-start" *ngFor="let furniture of furnitureAsSet(room.furniture)">
+              {{furniture}} - {{furnitureCount(room.furniture, furniture)}} шт.
+            </li>
+          </ul>
+      </td>
+    </tr>
+  </table>
+</div>

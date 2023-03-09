@@ -1,0 +1,36 @@
+tr {
+  border: 3px solid black;
+}
+
+td + td {
+  border-top: 1px dashed black;
+}
+
+li {
+  list-style-position: inside;
+  margin-left: 25vw;
+}
+
+.furniture-row {
+  margin: 0 30%;
+}
+
+@media (min-width: 1200px) {
+  tr {
+    border: 1px solid black;
+  }
+
+  tr.data:hover {
+    background-color: rgba(1,186,253,0.2);
+    cursor: pointer;
+  }
+
+  td {
+    border-left: 1px solid black;
+  }
+
+  li {
+    margin-left: 20%;
+  }
+
+}

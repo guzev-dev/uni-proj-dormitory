@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row p-xl-5 p-2">
+    <div class="offset-xl-1 col-xl-7 col-12">
+      <h1 class="display-4 mb-4">Гуртожиток № {{selectedDormitory.dormitoryNumber}}</h1>
+      <p class="fs-3 text-justify">
+        <span class="fw-bolder">Адреса:</span>
+        {{selectedDormitory.address}}</p>
+
+      <p class="fs-3 text-justify">
+        <span class="fw-bolder">Житлова система:</span>
+        {{selectedDormitory.dormitoryType}}</p>
+
+      <p class="fs-3 text-justify">
+        <span class="fw-bolder">Факультети:</span>
+        {{selectedDormitory.faculties}}</p>
+
+      <p class="fs-3 text-justify">
+        <span class="fw-bolder">Контакти:</span>
+        {{selectedDormitory.contacts}}</p>
+    </div>
+
+    <div class="col-xl-3 d-xl-block d-none">
+      <img class="img-fluid" src="{{selectedDormitory.photo}}" alt="">
+    </div>
+
+    <div class="offset-xl-1 col-xl-10 col-12 text-center mt-4">
+      <h1 class="display-5 fw-bolder mb-4">Список доступних кімнат гуртожитку</h1>
+
+      <app-rooms-list [rooms]="dormitoryRooms"></app-rooms-list>
+
+    </div>
+  </div>
+</div>

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {DormitoryModel} from "../dormitory.model";
 
 @Component({
-  selector: 'app-dormitory-list',
-  templateUrl: './dormitory-list.component.html',
-  styleUrls: ['./dormitory-list.component.css']
+  selector: 'app-dormitories-list',
+  templateUrl: './dormitories-list.component.html',
+  styleUrls: ['./dormitories-list.component.css']
 })
-export class DormitoryListComponent implements OnInit {
+export class DormitoriesListComponent implements OnInit {
 
   dormitories: DormitoryModel[] = [
     {

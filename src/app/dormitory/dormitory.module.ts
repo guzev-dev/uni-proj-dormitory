@@ -1,18 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DormitoryListComponent } from './dormitory-list/dormitory-list.component';
+import { DormitoriesListComponent } from './dormitories-list/dormitories-list.component';
+import { DormitoryPageComponent } from './dormitory-page/dormitory-page.component';
+import {RouterModule, Routes} from "@angular/router";
+import { RoomsListComponent } from './rooms-list/rooms-list.component';
 
-
+const routes: Routes = [
+  {path: 'dormitory/:id', component: DormitoryPageComponent}
+]
 
 @NgModule({
   declarations: [
-    DormitoryListComponent
+    DormitoriesListComponent,
+    DormitoryPageComponent,
+    RoomsListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(routes)
   ],
   exports: [
-    DormitoryListComponent
+    RouterModule,
+    DormitoriesListComponent
   ]
 })
 export class DormitoryModule { }
