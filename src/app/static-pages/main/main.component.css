@@ -1,3 +1,11 @@
+.alg-item {
+  transition: transform 1s;
+}
+
+.alg-item:hover {
+  transform: scale(1.2);
+}
+
 .alg-item-title {
   border-bottom: 2px #01BAFD solid;
   width: 90%;

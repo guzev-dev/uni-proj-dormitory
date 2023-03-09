@@ -15,14 +15,14 @@ li {
   margin: 0 30%;
 }
 
+tr.data:hover {
+  background-color: rgba(1,186,253,0.2);
+  cursor: pointer;
+}
+
 @media (min-width: 1200px) {
   tr {
     border: 1px solid black;
-  }
-
-  tr.data:hover {
-    background-color: rgba(1,186,253,0.2);
-    cursor: pointer;
   }
 
   td {

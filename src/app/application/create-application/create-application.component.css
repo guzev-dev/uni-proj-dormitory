@@ -1,0 +1,5 @@
+input[disabled] {
+  background-color: transparent;
+  text-align: center;
+  font-weight: bold;
+}
