@@ -8,7 +8,12 @@ import {FooterComponent} from './shared/footer/footer.component';
 import {StaticPagesModule} from "./static-pages/static-pages.module";
 import {RouterModule} from "@angular/router";
 import {AuthModule} from "./auth/auth.module";
-import {SettlementApplicationModule} from "./application/settlement-application.module";
+import {SettlementApplicationModule} from "./settlement-application/settlement-application.module";
+import { StoreModule } from '@ngrx/store';
+import {appReducer} from "./app.reducer";
+import { EffectsModule } from '@ngrx/effects';
+import {ApplicationEffects} from "./settlement-application/store/application.effects";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -18,7 +23,10 @@ import {SettlementApplicationModule} from "./application/settlement-application.
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([], {scrollPositionRestoration: 'enabled'}),
+    StoreModule.forRoot(appReducer),
+    EffectsModule.forRoot([ApplicationEffects]),
     DormitoryModule,
     StaticPagesModule,
     AuthModule,

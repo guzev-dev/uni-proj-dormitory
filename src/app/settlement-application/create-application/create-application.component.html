@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" [@componentChange]>
   <div class="d-flex align-items-center" style="min-height: 85vh;">
     <div class="offset-xl-3 col-xl-6 col-12 p-xl-5 p-2 my-4 border-blue">
       <h1 class="display-6 mb-4">Заявка на поселення</h1>
@@ -12,18 +12,20 @@
             <label for="endDate" class="form-label">Дата завершення проживання:</label>
             <input type="date" class="form-control" id="endDate">
           </div>
-          <div class="col-xl-3 col-6 mb-4">
-            <label for="dormitory">Гуртожиток №:</label>
-            <input type="number" class="form-control" id="dormitory" disabled>
-          </div>
-          <div class="col-xl-4 col-6 mb-4">
-            <label for="room">Кімната №:</label>
-            <input type="number" class="form-control" value="3" id="room" disabled>
+          <div class="row" *ngIf="selectedRoom">
+            <div class="col-xl-3 col-6 mb-4">
+              <label for="dormitory">Гуртожиток №:</label>
+              <input type="number" class="form-control" value="{{selectedRoom.dormitoryId}}" id="dormitory" disabled>
+            </div>
+            <div class="col-xl-4 col-6 mb-4">
+              <label for="room">Кімната №:</label>
+              <input type="text" class="form-control" value="{{selectedRoom.roomNumber}}" id="room" disabled>
+            </div>
           </div>
           <div class="col-12 text-center mt-2 mb-4">
             <button class="btn-blue">Надіслати заявку</button>
           </div>
-          <div class="col-12 text-end mt-4"><span class="text-blue link-custom fs-5">Переглянути попередні заявки</span></div>
+          <div class="col-12 text-end mt-4"><span class="text-blue link-custom fs-5" routerLink="../applications-list">Переглянути попередні заявки</span></div>
         </div>
       </form>
     </div>

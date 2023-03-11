@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" [@componentChange]>
   <div class="row">
     <div class="col-lg-8 col-12 p-0">
       <img class="img-fluid" style="height: 100% !important;" src="/assets/img/students.jpg" alt="">
@@ -6,9 +6,12 @@
 
     <div class="col-lg-4 col-12 p-0 bg-blue p-5">
       <h1 class="display-5 text-white fw-bold my-4">Гуртожитки НАУ</h1>
-      <p class="text-white" style="text-align: justify; font-size: 2vh;">Гуртожитки обладнані всіма необхідними умовами для комфортного життя і навчання. Інфраструктура: кімнати, душові, кухні, пральні, постільна білизна, спорт та відпочинок. Студентське містечко нараховує 11 гуртожитків. Приєднуйся!</p>
+      <p class="text-white" style="text-align: justify; font-size: 2vh;">Гуртожитки обладнані всіма необхідними умовами
+        для комфортного життя і навчання. Інфраструктура: кімнати, душові, кухні, пральні, постільна білизна, спорт та
+        відпочинок. Студентське містечко нараховує 11 гуртожитків. Приєднуйся!</p>
 
-      <button class="btn-custom mt-lg-4" style="font-size: 3vh;">Подати заяву</button>
+      <button class="btn-custom mt-lg-4" style="font-size: 3vh;" routerLink="../create-application">Подати заяву
+      </button>
     </div>
   </div>
 

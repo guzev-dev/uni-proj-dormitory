@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
+import {componentChangeAnimation} from "../../animations/component-change.animation";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css', '../../styles/form-styles.css']
+  styleUrls: ['./login.component.css', '../../styles/form-styles.css'],
+  animations: [componentChangeAnimation]
 })
 export class LoginComponent implements OnInit {
 

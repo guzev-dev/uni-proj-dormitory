@@ -1,5 +1,5 @@
 .alg-item {
-  transition: transform 1s;
+  transition: transform .5s;
 }
 
 .alg-item:hover {

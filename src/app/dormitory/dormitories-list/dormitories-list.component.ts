@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DormitoryModel} from "../dormitory.model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-dormitories-list',
@@ -10,6 +11,7 @@ export class DormitoriesListComponent implements OnInit {
 
   dormitories: DormitoryModel[] = [
     {
+      id: 1,
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
@@ -17,6 +19,7 @@ export class DormitoriesListComponent implements OnInit {
       faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
+      id: 2,
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
@@ -24,6 +27,7 @@ export class DormitoriesListComponent implements OnInit {
       faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
+      id: 1,
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
@@ -31,6 +35,7 @@ export class DormitoriesListComponent implements OnInit {
       faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
+      id: 1,
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
@@ -38,6 +43,7 @@ export class DormitoriesListComponent implements OnInit {
       faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
+      id: 1,
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
@@ -45,6 +51,7 @@ export class DormitoriesListComponent implements OnInit {
       faculties: 'ФКПІ, ФКМВ, АКС, БІКС'
     },
     {
+      id: 1,
       dormitoryNumber: 1,
       address: 'м. Київ, вул. Іваненко 51а',
       dormitoryType: 'Блочна система',
@@ -53,9 +60,13 @@ export class DormitoriesListComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateTo(dormitry: DormitoryModel) {
+    this.router.navigate(["../dormitory/" + dormitry.id])
   }
 
 }

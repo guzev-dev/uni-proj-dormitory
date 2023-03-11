@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {DormitoryModel} from "../dormitory.model";
 import {RoomModel} from "../room.model";
+import {componentChangeAnimation} from "../../animations/component-change.animation";
 
 @Component({
   selector: 'app-dormitory-page',
   templateUrl: './dormitory-page.component.html',
-  styleUrls: ['./dormitory-page.component.css']
+  styleUrls: ['./dormitory-page.component.css'],
+  animations: [componentChangeAnimation]
 })
 export class DormitoryPageComponent implements OnInit {
 

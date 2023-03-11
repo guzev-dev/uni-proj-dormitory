@@ -1,10 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {DormitoryModel} from "../../dormitory/dormitory.model";
+import {componentChangeAnimation} from "../../animations/component-change.animation";
 
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
-  styleUrls: ['./contacts.component.css']
+  styleUrls: ['./contacts.component.css'],
+  animations: [componentChangeAnimation]
 })
 export class ContactsComponent implements OnInit {
 
