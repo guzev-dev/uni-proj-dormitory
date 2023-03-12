@@ -1,7 +1,8 @@
 
 export interface RoomModel {
   id?: number,
-  dormitoryId: number,
+  dormitoryId?: number,
+  dormitoryNumber?: number,
   roomNumber?: string,
   capacity?: number,
   furniture?: FurnitureItemModel[]

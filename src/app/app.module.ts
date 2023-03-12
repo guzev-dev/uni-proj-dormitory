@@ -14,6 +14,7 @@ import {appReducer} from "./app.reducer";
 import { EffectsModule } from '@ngrx/effects';
 import {ApplicationEffects} from "./settlement-application/store/application.effects";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {UserProfileModule} from "./profile/user-profile.module";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     DormitoryModule,
     StaticPagesModule,
     AuthModule,
-    SettlementApplicationModule
+    SettlementApplicationModule,
+    UserProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent]

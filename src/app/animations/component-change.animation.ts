@@ -6,8 +6,8 @@ export const componentChangeAnimation = trigger('componentChange', [
   })),
   transition('void => *', [
     style({
-      transform: 'translateY(-100px)'
+      transform: 'scale(0.9)'
     }),
-    animate('0.3s')
+    animate('0.2s')
   ])
 ]);

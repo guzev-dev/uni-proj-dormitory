@@ -7,7 +7,7 @@
       <td class="d-xl-table-cell d-block py-2">Меблі</td>
     </tr>
     <tr *ngFor="let room of rooms;" class="data" (click)="selectRoom(room)">
-      <td class="d-xl-table-cell d-block py-2">{{room.dormitoryId}}</td>
+      <td class="d-xl-table-cell d-block py-2">{{room.dormitoryNumber}}</td>
       <td class="d-xl-table-cell d-block py-2">{{room.roomNumber}}</td>
       <td class="d-xl-table-cell d-block py-2">{{room.capacity}}</td>
       <td class="d-xl-table-cell d-block py-2">

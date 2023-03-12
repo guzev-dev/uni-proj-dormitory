@@ -24,6 +24,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
@@ -37,6 +38,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
@@ -50,6 +52,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
@@ -63,6 +66,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
@@ -76,6 +80,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
@@ -89,6 +94,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
@@ -102,6 +108,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
@@ -115,6 +122,7 @@ export class DormitoryPageComponent implements OnInit {
     {
       id: 1,
       dormitoryId: 3,
+      dormitoryNumber: 3,
       roomNumber: "243-2",
       capacity: 4,
       furniture: [
